@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  background-color: burlywood;
+}
+
+input {
+  width: 80px;
+}
+
+table tr td {
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
