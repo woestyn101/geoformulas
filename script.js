@@ -39,3 +39,26 @@ function areaRecttangle() {
 document
   .querySelector('.areaRectangle')
   .addEventListener('click', areaRecttangle);
+
+function circumferenceCircle() {
+  let theRadius = document.querySelector('.radius').value;
+  let theCircumference = (2 * Math.PI * theRadius).toFixed(2);
+  console.log(theCircumference);
+  document.querySelector('.answerCircumference').value = theCircumference;
+  console.log(typeof theCircumference);
+}
+
+document
+  .querySelector('.Circumference')
+  .addEventListener('click', circumferenceCircle);
+
+function theAreaCircle() {
+  console.log('working');
+  let theRadius = document.querySelector('.radius').value;
+  let theArea = Math.PI * theRadius ** 2;
+  console.log(typeof theArea);
+  console.log(theArea.toFixed(2));
+  document.querySelector('.answerAreaCircle').value = theArea.toFixed(2);
+}
+
+document.querySelector('.areaCircle').addEventListener('click', theAreaCircle);
